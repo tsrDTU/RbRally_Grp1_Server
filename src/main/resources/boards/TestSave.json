@@ -1,0 +1,165 @@
+{
+  "width": 15,
+  "height": 12,
+  "spaces": [],
+  "numberOfPlayers": 3,
+  "players": [
+    {
+      "name": "Player 1",
+      "color": "red",
+      "checkToken": 1,
+      "number": 0,
+      "program": [
+        {
+          "command": "FORWARD",
+          "observers": []
+        },
+        null,
+        null,
+        null,
+        null
+      ],
+      "cards": [
+        {
+          "command": "RIGHT",
+          "observers": []
+        },
+        {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
+          "command": "FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
+          "command": "FAST_FORWARD",
+          "observers": []
+        },
+        null,
+        {
+          "command": "FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "RIGHT",
+          "observers": []
+        }
+      ],
+      "heading": "SOUTH",
+      "x": 4,
+      "y": 2
+    },
+    {
+      "name": "Player 2",
+      "color": "green",
+      "checkToken": 2,
+      "number": 1,
+      "program": [
+        {
+          "command": "FORWARD",
+          "observers": []
+        },
+        null,
+        null,
+        null,
+        null
+      ],
+      "cards": [
+        {
+          "command": "LEFT",
+          "observers": []
+        },
+        null,
+        {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
+          "command": "OPTION_FWD_FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "FORWARD",
+          "observers": []
+        },
+        {
+          "command": "RIGHT",
+          "observers": []
+        },
+        {
+          "command": "RIGHT",
+          "observers": []
+        },
+        {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        }
+      ],
+      "heading": "SOUTH",
+      "x": 12,
+      "y": 2
+    },
+    {
+      "name": "Player 3",
+      "color": "blue",
+      "checkToken": 3,
+      "number": 2,
+      "program": [
+        {
+          "command": "FORWARD",
+          "observers": []
+        },
+        null,
+        null,
+        null,
+        null
+      ],
+      "cards": [
+        {
+          "command": "LEFT",
+          "observers": []
+        },
+        {
+          "command": "LEFT",
+          "observers": []
+        },
+        {
+          "command": "LEFT",
+          "observers": []
+        },
+        {
+          "command": "FAST_FORWARD",
+          "observers": []
+        },
+        null,
+        {
+          "command": "RIGHT",
+          "observers": []
+        },
+        {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
+          "command": "OPTION_FWD_FAST_FORWARD",
+          "observers": []
+        }
+      ],
+      "heading": "SOUTH",
+      "x": 13,
+      "y": 10
+    }
+  ],
+  "val": {
+    "map": "GoldenStripe",
+    "amountOfPlayers": 3,
+    "MovePlayer": false,
+    "selectedPLayer": 2,
+    "clickCounter": 0
+  }
+}

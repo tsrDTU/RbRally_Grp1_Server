@@ -1,0 +1,115 @@
+{
+  "width": 15,
+  "height": 12,
+  "spaces": [],
+  "numberOfPlayers": 2,
+  "players": [
+    {
+      "name": "Player 1",
+      "color": "red",
+      "checkToken": 0,
+      "number": 0,
+      "program": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cards": [
+        {
+          "command": "OPTION_FWD_FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "OPTION_FWD_FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "OPTION_FWD_FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "LEFT",
+          "observers": []
+        },
+        {
+          "command": "OPTION_FWD_FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "RIGHT",
+          "observers": []
+        },
+        {
+          "command": "LEFT",
+          "observers": []
+        },
+        {
+          "command": "LEFT",
+          "observers": []
+        }
+      ],
+      "heading": "WEST",
+      "x": 8,
+      "y": 10
+    },
+    {
+      "name": "Player 2",
+      "color": "green",
+      "checkToken": 0,
+      "number": 1,
+      "program": [
+        null,
+        null,
+        {
+          "command": "FORWARD",
+          "observers": []
+        },
+        null,
+        {
+          "command": "FORWARD",
+          "observers": []
+        }
+      ],
+      "cards": [
+        {
+          "command": "RIGHT",
+          "observers": []
+        },
+        {
+          "command": "RIGHT",
+          "observers": []
+        },
+        null,
+        {
+          "command": "OPTION_FWD_FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        null,
+        {
+          "command": "LEFT",
+          "observers": []
+        }
+      ],
+      "heading": "WEST",
+      "x": 11,
+      "y": 9
+    }
+  ],
+  "val": {
+    "map": "GoldenStripe",
+    "amountOfPlayers": 2,
+    "MovePlayer": false,
+    "selectedPLayer": 0,
+    "clickCounter": 0
+  }
+}

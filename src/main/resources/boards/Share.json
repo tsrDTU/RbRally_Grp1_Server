@@ -1,0 +1,115 @@
+{
+  "width": 15,
+  "height": 12,
+  "spaces": [],
+  "numberOfPlayers": 2,
+  "players": [
+    {
+      "name": "Player 1",
+      "color": "red",
+      "checkToken": 0,
+      "number": 0,
+      "program": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cards": [
+        {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
+          "command": "FORWARD",
+          "observers": []
+        },
+        {
+          "command": "FORWARD",
+          "observers": []
+        },
+        {
+          "command": "OPTION_FWD_FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "RIGHT",
+          "observers": []
+        },
+        {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
+          "command": "LEFT",
+          "observers": []
+        },
+        {
+          "command": "RIGHT",
+          "observers": []
+        }
+      ],
+      "heading": "NORTH",
+      "x": 5,
+      "y": 0
+    },
+    {
+      "name": "Player 2",
+      "color": "green",
+      "checkToken": 0,
+      "number": 1,
+      "program": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "cards": [
+        {
+          "command": "FORWARD",
+          "observers": []
+        },
+        {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
+          "command": "FORWARD",
+          "observers": []
+        },
+        {
+          "command": "FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
+          "command": "FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "OPTION_FWD_FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "FAST_FORWARD",
+          "observers": []
+        }
+      ],
+      "heading": "SOUTH",
+      "x": 1,
+      "y": 1
+    }
+  ],
+  "val": {
+    "map": "Testing",
+    "amountOfPlayers": 2,
+    "MovePlayer": false,
+    "selectedPLayer": 0,
+    "clickCounter": 0
+  }
+}
