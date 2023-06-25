@@ -5,35 +5,37 @@ import dk.dtu.compute.se.pisd.roborally.fileaccess.model.BoardTemplate;
 import java.util.ArrayList;
 import java.util.List;
 import dk.dtu.compute.se.pisd.roborally.fileaccess.model.BoardTemplate;
-
+import dk.dtu.compute.se.pisd.roborally.model.Board;
 
 
 public class GameService
 {
-    ArrayList<BoardTemplate> games = new ArrayList<BoardTemplate>();
+    ArrayList<Game> games = new ArrayList<Game>();
     private List<dk.dtu.compute.se.pisd.roborally.fileaccess.model.BoardTemplate> BoardTemplate;
 
-    public GameService()
+    public GameService(Board board)
     {
+
+        games.add(new Game(1,board));
 
     }
 
 
-    public List<BoardTemplate> findAll()
+    public List<Game> findAll()
     {
         //returns a list of games
-        return BoardTemplate;
+        return games;
     }
 
 
-    public boolean addProduct(BoardTemplate p) {
+    public boolean addGame(Game p) {
         games.add(p);
         return true;
     }
 
 
-    public BoardTemplate getProductById(int id) {
-        for(BoardTemplate p : games) {
+    public Game getGameById(int id) {
+        for(Game p : games) {
             if(p.getId() == id) {
                 return p;
             }
@@ -42,12 +44,15 @@ public class GameService
     }
 
 
-    public boolean updateProduct(int id, BoardTemplate p) {
-        for(BoardTemplate currProd : games) {
+    public boolean updateGame(int id, Game p) {
+        for(Game currProd : games) {
             if(currProd.getId() == id) {
+                /*
                 currProd.setId(p.getId());
                 currProd.setPname(p.getPname());
                 currProd.setPrice(p.getPrice());
+
+                 */
                 return true;
             }
         }
@@ -55,14 +60,14 @@ public class GameService
     }
 
 
-    public boolean deleteProductById(int id) {
-        ArrayList<BoardTemplate> newProducts = new ArrayList<BoardTemplate>();
+    public boolean deleteGameById(int id) {
+        ArrayList<Game> newGames = new ArrayList<Game>();
         int oldSize = games.size();
-        games.forEach((product -> {
-            if(product.getId() == id)
-                newProducts.add(product);
+        games.forEach((game -> {
+            if(game.getId() == id)
+                newGames.add(game);
         }));
-        games = newProducts;
+        games = newGames;
         return oldSize < games.size() ? true : false;
     }
 }

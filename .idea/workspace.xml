@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="730f1764-757f-46c3-bdf7-0fcb6fabefe2" name="Changes" comment="Server startet">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/controller/RestControllerRb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/fileaccess/GameService.java" afterDir="false" />
+    <list default="true" id="730f1764-757f-46c3-bdf7-0fcb6fabefe2" name="Changes" comment="Game service tilføjet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/fileaccess/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/controller/RestControllerRb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/controller/RestControllerRb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/fileaccess/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/fileaccess/GameService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,20 +46,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/tsr_0/IdeaProjects/RbRally_Grp1_Server",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "a80c69cf985f29c7a96218f19d10c628"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tsr_0/IdeaProjects/RbRally_Grp1_Server&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a80c69cf985f29c7a96218f19d10c628&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.StartRoboRally (1)">
     <configuration name="StartRoboRally (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dk.dtu.compute.se.pisd.roborally.StartRoboRally" />
@@ -108,7 +109,8 @@
       <workItem from="1687505866272" duration="5608000" />
       <workItem from="1687522035850" duration="4421000" />
       <workItem from="1687617975548" duration="1923000" />
-      <workItem from="1687629244493" duration="2306000" />
+      <workItem from="1687629244493" duration="2695000" />
+      <workItem from="1687694987471" duration="2274000" />
     </task>
     <task id="LOCAL-00001" summary="Roborally client startet">
       <created>1687333871982</created>
@@ -145,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687618784787</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Game service tilføjet">
+      <created>1687632641546</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687632641546</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +177,7 @@
     <MESSAGE value="GSON simple builder tilføjet" />
     <MESSAGE value="GSON get board tilføjet" />
     <MESSAGE value="Server startet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server startet" />
+    <MESSAGE value="Game service tilføjet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game service tilføjet" />
   </component>
 </project>
