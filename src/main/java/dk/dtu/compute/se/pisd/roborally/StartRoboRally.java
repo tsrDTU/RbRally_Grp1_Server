@@ -43,13 +43,14 @@ import java.util.Objects;
  * @author Ekkart Kindler, ekki@dtu.dk
  */
 
-//@SpringBootApplication
+@SpringBootApplication
 public class StartRoboRally {
 
 
     public static void main(String[] args) {
-  //      SpringApplication.run(StartRoboRally.class, args);
-        RoboRally.main(args);
+        SpringApplication.run(StartRoboRally.class, args);
+ //       System.out.println("SpringApplication.run");
+ //       RoboRally.main(args);
     }
 
 }

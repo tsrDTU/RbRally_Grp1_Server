@@ -2,7 +2,9 @@ package dk.dtu.compute.se.pisd.roborally.controller;
 
 import dk.dtu.compute.se.pisd.roborally.fileaccess.Game;
 import dk.dtu.compute.se.pisd.roborally.fileaccess.GameService;
+import dk.dtu.compute.se.pisd.roborally.fileaccess.LoadBoard;
 import dk.dtu.compute.se.pisd.roborally.fileaccess.model.BoardTemplate;
+import dk.dtu.compute.se.pisd.roborally.model.Board;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,8 +15,15 @@ import java.util.List;
 
 public class RestControllerRb
 {
-    @Autowired
+    Board board;
     GameService gameService;
+
+    @Autowired
+     public RestControllerRb() {
+        board= LoadBoard.loadBoard("Share");
+
+        gameService = new GameService(board);
+    }
 
 
     @GetMapping(value = "/games")

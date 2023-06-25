@@ -71,6 +71,7 @@ public class AppController implements Observer {
  //   public WebPlayerController webCon;
 
  //   public WebHostController webHost;
+    public RestControllerRb restControllerRb;
 
     private GameController gameController;
 
@@ -86,6 +87,8 @@ public class AppController implements Observer {
         gameController.startProgrammingPhase();
 
         roboRally.createBoardView(gameController);
+
+  //      restControllerRb=new RestControllerRb(gameController.board);
 
     }
 

@@ -45,7 +45,7 @@ public class RoboRally extends Application {
     private BorderPane boardRoot;
     // private RoboRallyMenuBar menuBar;
 
-    // private AppController appController;
+     private AppController appController;
 
     @Override
     public void init() throws Exception {
@@ -57,6 +57,7 @@ public class RoboRally extends Application {
         stage = primaryStage;
 
         AppController appController = new AppController(this);
+        System.out.println("AppController startet i RoboRally");
 
         // create the primary scene with the a menu bar and a pane for
         // the board view (which initially is empty); it will be filled
