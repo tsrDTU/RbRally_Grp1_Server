@@ -11,7 +11,7 @@ import dk.dtu.compute.se.pisd.roborally.model.Board;
 public class GameService
 {
     ArrayList<Game> games = new ArrayList<Game>();
-    private List<dk.dtu.compute.se.pisd.roborally.fileaccess.model.BoardTemplate> BoardTemplate;
+ //   private List<dk.dtu.compute.se.pisd.roborally.fileaccess.model.BoardTemplate> BoardTemplate;
 
     public GameService()
     {

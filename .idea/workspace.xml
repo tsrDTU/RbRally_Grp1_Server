@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="730f1764-757f-46c3-bdf7-0fcb6fabefe2" name="Changes" comment="Server kan startes og et spil loades til web.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="730f1764-757f-46c3-bdf7-0fcb6fabefe2" name="Changes" comment="2 splil på web">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/controller/RestControllerRb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/controller/RestControllerRb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/fileaccess/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/fileaccess/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/fileaccess/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dk/dtu/compute/se/pisd/roborally/fileaccess/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/boards/Share.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/boards/Share.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/boards/TestSave.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/boards/TestSave.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/RoboRally.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/RoboRally.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/StartRoboRally.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/StartRoboRally.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/controller/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/controller/AppController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/controller/RestControllerRb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/controller/RestControllerRb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/fileaccess/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/fileaccess/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/fileaccess/GameService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/fileaccess/GameService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +116,7 @@
       <workItem from="1687747184640" duration="4587000" />
       <workItem from="1687793312763" duration="1950000" />
       <workItem from="1687802687766" duration="2185000" />
-      <workItem from="1687830860210" duration="4096000" />
+      <workItem from="1687830860210" duration="5724000" />
     </task>
     <task id="LOCAL-00001" summary="Roborally client startet">
       <created>1687333871982</created>
@@ -185,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687706197530</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="2 splil på web">
+      <created>1687862142166</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687862142166</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +207,7 @@
     <MESSAGE value="Game service tilføjet" />
     <MESSAGE value="Game service kan compiles." />
     <MESSAGE value="Server kan startes og et spil loades til web." />
-    <option name="LAST_COMMIT_MESSAGE" value="Server kan startes og et spil loades til web." />
+    <MESSAGE value="2 splil på web" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 splil på web" />
   </component>
 </project>
