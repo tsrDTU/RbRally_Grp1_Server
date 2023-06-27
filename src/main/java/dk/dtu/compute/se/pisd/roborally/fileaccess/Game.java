@@ -12,6 +12,7 @@ public class Game {
     {
         this.id=id;
         this.board=LoadBoard.fillInBoardTemplate(board);
+        System.out.println("Game board"+this.board);
     }
 
     public int getId()

@@ -18,7 +18,27 @@
       ],
       "cards": [
         {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
           "command": "FORWARD",
+          "observers": []
+        },
+        {
+          "command": "FORWARD",
+          "observers": []
+        },
+        {
+          "command": "OPTION_FWD_FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "RIGHT",
+          "observers": []
+        },
+        {
+          "command": "OPTION_LEFT_RIGHT",
           "observers": []
         },
         {
@@ -26,32 +46,12 @@
           "observers": []
         },
         {
-          "command": "FAST_FORWARD",
-          "observers": []
-        },
-        {
-          "command": "FORWARD",
-          "observers": []
-        },
-        {
-          "command": "OPTION_LEFT_RIGHT",
-          "observers": []
-        },
-        {
-          "command": "OPTION_LEFT_RIGHT",
-          "observers": []
-        },
-        {
-          "command": "FAST_FORWARD",
-          "observers": []
-        },
-        {
-          "command": "FORWARD",
+          "command": "RIGHT",
           "observers": []
         }
       ],
-      "heading": "SOUTH",
-      "x": 0,
+      "heading": "NORTH",
+      "x": 5,
       "y": 0
     },
     {
@@ -72,11 +72,23 @@
           "observers": []
         },
         {
-          "command": "LEFT",
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
+          "command": "FORWARD",
+          "observers": []
+        },
+        {
+          "command": "FAST_FORWARD",
           "observers": []
         },
         {
           "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
+          "command": "FAST_FORWARD",
           "observers": []
         },
         {
@@ -84,19 +96,7 @@
           "observers": []
         },
         {
-          "command": "FORWARD",
-          "observers": []
-        },
-        {
-          "command": "FORWARD",
-          "observers": []
-        },
-        {
-          "command": "LEFT",
-          "observers": []
-        },
-        {
-          "command": "OPTION_LEFT_RIGHT",
+          "command": "FAST_FORWARD",
           "observers": []
         }
       ],
@@ -106,7 +106,7 @@
     }
   ],
   "val": {
-    "map": "GoldenStripe",
+    "map": "Testing",
     "amountOfPlayers": 2,
     "MovePlayer": false,
     "selectedPLayer": 0,

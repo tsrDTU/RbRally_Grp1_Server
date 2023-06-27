@@ -12,17 +12,16 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-
 public class RestControllerRb
 {
-    Board board;
+ //   Board board;
     GameService gameService;
 
     @Autowired
      public RestControllerRb() {
-        board= LoadBoard.loadBoard("Share");
 
-        gameService = new GameService(board);
+
+        gameService = new GameService();
     }
 
 

@@ -13,10 +13,19 @@ public class GameService
     ArrayList<Game> games = new ArrayList<Game>();
     private List<dk.dtu.compute.se.pisd.roborally.fileaccess.model.BoardTemplate> BoardTemplate;
 
-    public GameService(Board board)
+    public GameService()
     {
+        Board board;
 
+        board= LoadBoard.loadBoard("ShareIn");
         games.add(new Game(1,board));
+        System.out.println("GameService game"+games.get(0).getId());
+
+
+        board= LoadBoard.loadBoard("WallsT");
+        games.add(new Game(2,board));
+        System.out.println("GameService game"+games.get(0).getId());
+
 
     }
 
