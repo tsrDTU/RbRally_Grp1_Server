@@ -24,7 +24,7 @@ public class GameService
 
         board= LoadBoard.loadBoard("WallsT");
         games.add(new Game(2,board));
-        System.out.println("GameService game"+games.get(0).getId());
+        System.out.println("GameService game"+games.get(1).getId());
 
 
     }
@@ -38,6 +38,7 @@ public class GameService
 
 
     public boolean addGame(Game p) {
+        System.out.println("Server addGame");
         games.add(p);
         return true;
     }

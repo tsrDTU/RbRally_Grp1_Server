@@ -34,6 +34,7 @@ public class RestControllerRb
 
     @PostMapping("/games")
     public ResponseEntity<String > addProduct(@RequestBody Game p) {
+        System.out.println("Server RestControllerRb PostMapping");
         boolean added = gameService.addGame(p);
         if(added)
             return ResponseEntity.ok().body("added");
