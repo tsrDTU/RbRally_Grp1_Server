@@ -15,25 +15,22 @@ import java.util.List;
 public class RestControllerRb
 {
  //   Board board;
-    GameService gameService;
+  //  GameService gameService;
 
     @Autowired
-     public RestControllerRb() {
+    private IGameService gameService;
 
-
-        gameService = new GameService();
-    }
 
 
     @GetMapping(value = "/games")
-    public ResponseEntity<List<Game>> getProduct()
+    public ResponseEntity<List<Game>> getGame()
     {
         List<Game> games = gameService.findAll();
         return ResponseEntity.ok().body(games);
     }
 
     @PostMapping("/games")
-    public ResponseEntity<String > addProduct(@RequestBody Game p) {
+    public ResponseEntity<String > addGame(@RequestBody Game p) {
         System.out.println("Server RestControllerRb PostMapping");
         boolean added = gameService.addGame(p);
         if(added)
@@ -44,15 +41,17 @@ public class RestControllerRb
     }
 
     @GetMapping("/games/{id}")
-    public ResponseEntity<Game> getProductById(@PathVariable int id) {
+    public ResponseEntity<Game> getGameById(@PathVariable int id) {
         Game p = gameService.getGameById(id);
         return ResponseEntity.ok().body(p);
     }
 
     @PutMapping("/games/{id}")
-    public ResponseEntity<String> updateProduct(@PathVariable int id, @RequestBody Game p) {
+    public ResponseEntity<String> updateGame(@PathVariable int id, @RequestBody Game p)
+    {
+        System.out.println("Server Update Game");
         boolean added = gameService.updateGame(id, p);
-        return ResponseEntity.ok().body("updated");
+        return ResponseEntity.ok().body("Updated");
     }
 /*
     @DeleteMapping("/games/{id}")

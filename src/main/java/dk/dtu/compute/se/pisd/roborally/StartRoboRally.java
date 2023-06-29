@@ -49,6 +49,7 @@ public class StartRoboRally {
 
     public static void main(String[] args) {
         SpringApplication.run(StartRoboRally.class, args);
+        System.out.println("Spring started");
  //       System.out.println("SpringApplication.run");
  //       RoboRally.main(args);
     }

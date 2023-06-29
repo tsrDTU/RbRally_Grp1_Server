@@ -24,6 +24,7 @@ package dk.dtu.compute.se.pisd.roborally.model;
 import dk.dtu.compute.se.pisd.designpatterns.observer.Subject;
 import dk.dtu.compute.se.pisd.roborally.model.Core.Value;
 import org.jetbrains.annotations.NotNull;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +37,8 @@ import static dk.dtu.compute.se.pisd.roborally.model.Phase.INITIALISATION;
  * @author Ekkart Kindler, ekki@dtu.dk
  *
  */
+
+//@Configuration
 public class Board extends Subject {
 
     public final int width;

@@ -23,6 +23,7 @@ package dk.dtu.compute.se.pisd.roborally.fileaccess.model;
 
 
 import dk.dtu.compute.se.pisd.roborally.model.Player;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +35,7 @@ import java.util.List;
  * @author Ekkart Kindler, ekki@dtu.dk
  * Modified by Torben Rasmussen
  */
+//@Configuration
 public class BoardTemplate {
 
     public int width;
