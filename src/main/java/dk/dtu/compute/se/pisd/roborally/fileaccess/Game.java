@@ -1,5 +1,6 @@
 package dk.dtu.compute.se.pisd.roborally.fileaccess;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import dk.dtu.compute.se.pisd.roborally.fileaccess.model.BoardTemplate;
 import dk.dtu.compute.se.pisd.roborally.model.Board;
 import org.springframework.context.annotation.Configuration;
@@ -8,8 +9,8 @@ import org.springframework.context.annotation.Configuration;
 public class Game {
     private int id;
     private BoardTemplate board;
-
-
+// https://dev.to/scottshipp/parsing-json-in-spring-boot-part-1-513
+@JsonCreator
     public Game (int id, Board board)
     {
         this.id=id;

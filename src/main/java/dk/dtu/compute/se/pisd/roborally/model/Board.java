@@ -21,9 +21,11 @@
  */
 package dk.dtu.compute.se.pisd.roborally.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import dk.dtu.compute.se.pisd.designpatterns.observer.Subject;
 import dk.dtu.compute.se.pisd.roborally.model.Core.Value;
 import org.jetbrains.annotations.NotNull;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;
@@ -40,6 +42,7 @@ import static dk.dtu.compute.se.pisd.roborally.model.Phase.INITIALISATION;
 
 //@Configuration
 public class Board extends Subject {
+
 
     public final int width;
 
@@ -61,8 +64,7 @@ public class Board extends Subject {
 
     private boolean stepMode;
 
-
-
+    @JsonCreator
     public Board(int width, int height, @NotNull String boardName) {
         this.boardName = boardName;
         this.width = width;

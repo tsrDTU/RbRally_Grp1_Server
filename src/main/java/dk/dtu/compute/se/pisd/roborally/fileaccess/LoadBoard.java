@@ -22,6 +22,7 @@ package dk.dtu.compute.se.pisd.roborally.fileaccess;
  */
 
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
@@ -36,7 +37,7 @@ import dk.dtu.compute.se.pisd.roborally.model.*;
 import dk.dtu.compute.se.pisd.roborally.model.Core.*;
 
 import javafx.scene.control.*;
-
+import org.springframework.context.annotation.Configuration;
 
 
 import java.io.*;
@@ -49,6 +50,7 @@ import java.util.Optional;
  *
  * Modified by Torben Rasmussen
  */
+//@Configuration
 public class LoadBoard
 {
     private static final String BOARDSFOLDER = "boards";
@@ -61,6 +63,7 @@ public class LoadBoard
      * @param boardname: Name of the json file to be deserialized.
      * @return a Board
      */
+
     public static Board loadBoard(String boardname)
     {
         if (boardname == null) {
@@ -112,7 +115,7 @@ public class LoadBoard
 
         return null;
     }
-
+    @JsonCreator
     public static Board createBoardFromTemplate(BoardTemplate template)
     {
         Board result;
@@ -166,6 +169,7 @@ public class LoadBoard
      * @param board pointer to the existing Board
      * @param boardname: Name of the file to loaded
      */
+
     public static void insertInBoard(Board board, String boardname)
     {
 

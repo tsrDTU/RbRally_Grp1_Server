@@ -8,6 +8,7 @@ import dk.dtu.compute.se.pisd.roborally.model.Player;
  * @Author tsrDTU og UffeBC
  *
  */
+
 public class Value {
     public static String map;
 

@@ -21,6 +21,8 @@
  */
 package dk.dtu.compute.se.pisd.roborally.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -55,7 +57,7 @@ public enum Command {
     // replaced by the code below:
 
     final private List<Command> options;
-
+    @JsonCreator
     Command(String displayName, Command... options) {
         this.displayName = displayName;
         this.options = Collections.unmodifiableList(Arrays.asList(options));

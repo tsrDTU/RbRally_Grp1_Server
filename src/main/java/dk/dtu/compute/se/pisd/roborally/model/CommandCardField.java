@@ -21,6 +21,7 @@
  */
 package dk.dtu.compute.se.pisd.roborally.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import dk.dtu.compute.se.pisd.designpatterns.observer.Subject;
 
 /**
@@ -36,7 +37,7 @@ public class CommandCardField extends Subject {
     private CommandCard card;
 
     private boolean visible;
-
+    @JsonCreator
     public CommandCardField(Player player) {
         this.player = player;
         this. card = null;

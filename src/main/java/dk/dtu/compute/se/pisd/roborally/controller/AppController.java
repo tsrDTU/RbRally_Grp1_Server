@@ -55,6 +55,7 @@ import dk.dtu.compute.se.pisd.roborally.fileaccess.*;
  * Role HOST: when the web is used and the user is the host
  * Role WEBPLAYER: when the web is used and the user is ta web player
  */
+
 public class AppController implements Observer {
 
     final private List<Integer> PLAYER_NUMBER_OPTIONS = Arrays.asList(2, 3, 4, 5, 6);

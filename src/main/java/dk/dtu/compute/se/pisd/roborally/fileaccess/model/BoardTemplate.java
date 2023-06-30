@@ -35,7 +35,7 @@ import java.util.List;
  * @author Ekkart Kindler, ekki@dtu.dk
  * Modified by Torben Rasmussen
  */
-//@Configuration
+@Configuration
 public class BoardTemplate {
 
     public int width;

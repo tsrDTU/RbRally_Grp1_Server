@@ -21,6 +21,7 @@
  */
 package dk.dtu.compute.se.pisd.roborally.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import dk.dtu.compute.se.pisd.designpatterns.observer.Subject;
 import org.jetbrains.annotations.NotNull;
 
@@ -33,7 +34,7 @@ import org.jetbrains.annotations.NotNull;
 public class CommandCard extends Subject {
 
     final public Command command;
-
+    @JsonCreator
     public CommandCard(@NotNull Command command) {
         this.command = command;
     }
