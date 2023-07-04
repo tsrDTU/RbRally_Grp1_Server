@@ -53,6 +53,8 @@ public class RestControllerRb
         boolean added = gameService.updateGame(id, p);
         return ResponseEntity.ok().body("Updated");
     }
+
+
 /*
     @DeleteMapping("/games/{id}")
     public ResponseEntity<String> deleteUser(@PathVariable int id) {

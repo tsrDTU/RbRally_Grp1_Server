@@ -24,6 +24,7 @@ package dk.dtu.compute.se.pisd.roborally.model;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import dk.dtu.compute.se.pisd.designpatterns.observer.Subject;
 import dk.dtu.compute.se.pisd.roborally.model.Core.Value;
+import jakarta.annotation.Resource;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -40,7 +41,7 @@ import static dk.dtu.compute.se.pisd.roborally.model.Phase.INITIALISATION;
  *
  */
 
-//@Configuration
+@Resource
 public class Board extends Subject {
 
 

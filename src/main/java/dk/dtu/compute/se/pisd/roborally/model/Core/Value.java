@@ -1,6 +1,8 @@
 package dk.dtu.compute.se.pisd.roborally.model.Core;
 
 import dk.dtu.compute.se.pisd.roborally.model.Player;
+import jakarta.annotation.Resource;
+import org.springframework.web.bind.annotation.RequestBody;
 
 /**
  * This Class contains values referenced in multiple classes,
@@ -8,7 +10,7 @@ import dk.dtu.compute.se.pisd.roborally.model.Player;
  * @Author tsrDTU og UffeBC
  *
  */
-
+@Resource
 public class Value {
     public static String map;
 
