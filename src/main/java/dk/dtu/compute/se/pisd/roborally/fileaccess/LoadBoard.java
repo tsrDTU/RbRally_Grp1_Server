@@ -28,6 +28,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import dk.dtu.compute.se.pisd.roborally.fileaccess.model.BoardTemplate;
+import dk.dtu.compute.se.pisd.roborally.fileaccess.model.GameTemplate;
 import dk.dtu.compute.se.pisd.roborally.fileaccess.model.PlayerTemplate;
 import dk.dtu.compute.se.pisd.roborally.fileaccess.model.SpaceTemplate;
 
@@ -158,6 +159,54 @@ public class LoadBoard
         result.setCurrentPlayer(result.getPlayer(template.val.selectedPLayer));
         System.out.println("Current Player loaded: "+result.getCurrentPlayer().getName());
 
+        return result;
+    }
+
+
+    @JsonCreator
+    public static Game createGameFromTemplate(GameTemplate template)
+    {
+        Game result;
+        Board board=new Board(template.board.width,template.board.height);
+
+
+        for (SpaceTemplate spaceTemplate: template.board.spaces) {
+            Space space = board.getSpace(spaceTemplate.x, spaceTemplate.y);
+            System.out.println("x: "+space.x+" y: "+space.y);
+            if (space != null) {
+                space.getActions().addAll(spaceTemplate.actions);
+                space.getWalls().addAll(spaceTemplate.walls);
+            }
+        }
+        for (PlayerTemplate playerTemplate: template.board.players)
+        {
+
+            Player player=new Player(board,playerTemplate.color,playerTemplate.name);
+            System.out.println(player.getName());
+            board.addPlayer(player);
+            player.setSpace(board.getSpace(playerTemplate.x, playerTemplate.y));
+            player.setHeading(playerTemplate.heading);
+            player.setTokenVal(playerTemplate.checkToken);
+
+            for (int j = 0; j < playerTemplate.cards.length; j++) {
+                player.getCardField(j).setCard(playerTemplate.cards[j]);
+            }
+            for (int j = 0; j < playerTemplate.program.length; j++) {
+                player.getProgramField(j).setCard(playerTemplate.program[j]);
+            }
+
+        }
+
+
+        Value.map=template.board.val.map;
+        Value.amountOfPlayers=template.board.val.amountOfPlayers;
+        Value.MovePlayer= template.board.val.MovePlayer;
+        Value.selectedPLayer=template.board.val.selectedPLayer;
+        Value.clickCounter= template.board.val.clickCounter;
+
+        board.setCurrentPlayer(board.getPlayer(template.board.val.selectedPLayer));
+        System.out.println("Current Player loaded: "+board.getCurrentPlayer().getName());
+        result = new Game(template.id, board);
         return result;
     }
 

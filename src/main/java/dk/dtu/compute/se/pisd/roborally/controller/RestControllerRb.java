@@ -4,6 +4,7 @@ import dk.dtu.compute.se.pisd.roborally.fileaccess.Game;
 import dk.dtu.compute.se.pisd.roborally.fileaccess.GameService;
 import dk.dtu.compute.se.pisd.roborally.fileaccess.LoadBoard;
 import dk.dtu.compute.se.pisd.roborally.fileaccess.model.BoardTemplate;
+import dk.dtu.compute.se.pisd.roborally.fileaccess.model.GameTemplate;
 import dk.dtu.compute.se.pisd.roborally.model.Board;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -30,9 +31,9 @@ public class RestControllerRb
     }
 
     @PostMapping("/games")
-    public ResponseEntity<String > addGame(@RequestBody Game p) {
+    public ResponseEntity<String > addGame(@RequestBody GameTemplate p) {
         System.out.println("Server RestControllerRb PostMapping");
-        boolean added = gameService.addGame(p);
+        boolean added = gameService.addGame(LoadBoard.createGameFromTemplate(p));
         if(added)
             return ResponseEntity.ok().body("added");
         else
@@ -47,10 +48,10 @@ public class RestControllerRb
     }
 
     @PutMapping("/games/{id}")
-    public ResponseEntity<String> updateGame(@PathVariable int id, @RequestBody Game p)
+    public ResponseEntity<String> updateGame(@PathVariable int id, @RequestBody GameTemplate p)
     {
         System.out.println("Server Update Game");
-        boolean added = gameService.updateGame(id, p);
+        boolean added = gameService.updateGame(id, LoadBoard.createGameFromTemplate(p));
         return ResponseEntity.ok().body("Updated");
     }
 
