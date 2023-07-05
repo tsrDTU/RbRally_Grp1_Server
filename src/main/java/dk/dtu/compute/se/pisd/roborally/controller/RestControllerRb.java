@@ -33,12 +33,14 @@ public class RestControllerRb
     @PostMapping("/games")
     public ResponseEntity<String > addGame(@RequestBody GameTemplate p) {
         System.out.println("Server RestControllerRb PostMapping");
-        boolean added = gameService.addGame(LoadBoard.createGameFromTemplate(p));
+        int added = gameService.addGame(LoadBoard.createGameFromTemplate(p));
+        /*
         if(added)
             return ResponseEntity.ok().body("added");
         else
             return ResponseEntity.internalServerError().body("not added");
-
+         */
+        return  ResponseEntity.ok().body(String.valueOf(added));
     }
 
     @GetMapping("/games/{id}")

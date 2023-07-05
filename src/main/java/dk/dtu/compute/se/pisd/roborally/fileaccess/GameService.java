@@ -57,10 +57,10 @@ public  class GameService implements IGameService
     }
 
 @Override
-    public boolean addGame(Game p) {
+    public int addGame(Game p) {
         System.out.println("Server addGame");
         games.add(p);
-        return true;
+        return games.size();
     }
 
 @Override
