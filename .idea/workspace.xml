@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="730f1764-757f-46c3-bdf7-0fcb6fabefe2" name="Changes" comment="Bedre styr gameId">
+    <list default="true" id="730f1764-757f-46c3-bdf7-0fcb6fabefe2" name="Changes" comment="Bedre bedre styr gameId">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/controller/IGameService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/controller/IGameService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/controller/RestControllerRb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/controller/RestControllerRb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/fileaccess/GameService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dk/dtu/compute/se/pisd/roborally/fileaccess/GameService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +135,10 @@
       <workItem from="1688577596468" duration="5589000" />
       <workItem from="1688666272189" duration="1494000" />
       <workItem from="1688718728681" duration="2791000" />
+      <workItem from="1688806661100" duration="1485000" />
+      <workItem from="1688836213087" duration="968000" />
+      <workItem from="1688968843151" duration="622000" />
+      <workItem from="1689011480755" duration="788000" />
     </task>
     <task id="LOCAL-00001" summary="Roborally client startet">
       <created>1687333871982</created>
@@ -237,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688590422497</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Bedre bedre styr gameId">
+      <created>1688806928074</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688806928074</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +277,8 @@
     <MESSAGE value="Jackson binding" />
     <MESSAGE value="Add- and update Game virker" />
     <MESSAGE value="Bedre styr gameId" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bedre styr gameId" />
+    <MESSAGE value="Bedre bedre styr gameId" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bedre bedre styr gameId" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
