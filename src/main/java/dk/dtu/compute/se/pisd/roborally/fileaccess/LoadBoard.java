@@ -51,7 +51,7 @@ import java.util.Optional;
  *
  * Modified by Torben Rasmussen
  */
-//@Configuration
+
 public class LoadBoard
 {
     private static final String BOARDSFOLDER = "boards";
@@ -116,7 +116,7 @@ public class LoadBoard
 
         return null;
     }
-    @JsonCreator
+//    @JsonCreator
     public static Board createBoardFromTemplate(BoardTemplate template)
     {
         Board result;
@@ -163,7 +163,7 @@ public class LoadBoard
     }
 
 
-    @JsonCreator
+ //   @JsonCreator
     public static Game createGameFromTemplate(GameTemplate template)
     {
         Game result;

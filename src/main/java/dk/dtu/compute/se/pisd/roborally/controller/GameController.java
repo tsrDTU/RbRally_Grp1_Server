@@ -44,18 +44,13 @@ import java.lang.*;
 public class GameController {
     final public AppController appController;
     final public Board board;
-//    private RESTController flicntr;
-//    private WebClient webController;
 
 
     public GameController(@NotNull Board board, @NotNull AppController appController) {
         this.board = board;
         this.appController = appController;
 
- //       flicntr=new RESTController();
- //       System.out.println("FileUploadController started");
 
-   //     webController=new WebClient();
     }
 
     /**

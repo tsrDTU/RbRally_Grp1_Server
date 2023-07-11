@@ -15,8 +15,7 @@ import java.util.List;
 @RestController
 public class RestControllerRb
 {
- //   Board board;
-  //  GameService gameService;
+
 
     @Autowired
     private IGameService gameService;
@@ -34,12 +33,7 @@ public class RestControllerRb
     public ResponseEntity<String > addGame(@RequestBody GameTemplate p) {
         System.out.println("Server RestControllerRb PostMapping");
         int added = gameService.addGame(LoadBoard.createGameFromTemplate(p));
-        /*
-        if(added)
-            return ResponseEntity.ok().body("added");
-        else
-            return ResponseEntity.internalServerError().body("not added");
-         */
+
         return  ResponseEntity.ok().body(String.valueOf(added));
     }
 

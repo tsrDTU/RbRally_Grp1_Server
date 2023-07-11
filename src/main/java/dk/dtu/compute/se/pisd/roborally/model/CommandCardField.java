@@ -37,7 +37,7 @@ public class CommandCardField extends Subject {
     private CommandCard card;
 
     private boolean visible;
-    @JsonCreator
+ //   @JsonCreator
     public CommandCardField(Player player) {
         this.player = player;
         this. card = null;

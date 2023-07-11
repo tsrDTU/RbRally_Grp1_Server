@@ -41,7 +41,7 @@ import static dk.dtu.compute.se.pisd.roborally.model.Phase.INITIALISATION;
  *
  */
 
-@Resource
+//@Resource
 public class Board extends Subject {
 
 
@@ -65,7 +65,7 @@ public class Board extends Subject {
 
     private boolean stepMode;
 
-    @JsonCreator
+//    @JsonCreator
     public Board(int width, int height, @NotNull String boardName) {
         this.boardName = boardName;
         this.width = width;

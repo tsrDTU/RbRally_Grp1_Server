@@ -56,7 +56,7 @@ public class Player extends Subject {
     public CommandCardField[] cards;
 
     private int checkToken = 0;
-    @JsonCreator
+  //  @JsonCreator
     public Player(@NotNull Board board, String color, @NotNull String name) {
         this.board = board;
         this.name = name;

@@ -8,18 +8,13 @@ import java.util.List;
 import dk.dtu.compute.se.pisd.roborally.fileaccess.model.BoardTemplate;
 import dk.dtu.compute.se.pisd.roborally.model.Board;
 import org.springframework.stereotype.Service;
-/*
-@Service
-public class ProductService implements IProductService
-{
 
- */
 
 @Service
 public  class GameService implements IGameService
 {
     ArrayList<Game> games = new ArrayList<Game>();
- //   private List<dk.dtu.compute.se.pisd.roborally.fileaccess.model.BoardTemplate> BoardTemplate;
+
 
     public GameService()
     {
@@ -36,18 +31,7 @@ public  class GameService implements IGameService
 
 
     }
-/*
-    public ProductService() {
-        //adding products to the List
-        products.add(new Product(100, "Mobile", 9000.00));
-        products.add(new Product(101, "Smart TV",  60000.00));
-        products.add(new Product(102, "Washing Machine", 9000.00));
-        products.add(new Product(103, "Laptop", 24000.00));
-        products.add(new Product(104, "Air Conditioner", 30000.00));
-        products.add(new Product(105, "Refrigerator ", 10000.00));
-    }
 
- */
 
 @Override
     public List<Game> findAll()
