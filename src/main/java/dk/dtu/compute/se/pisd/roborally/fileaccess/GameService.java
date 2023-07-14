@@ -30,6 +30,17 @@ public  class GameService implements IGameService
         System.out.println("GameService game"+games.get(1).getId());
 
 
+        board= LoadBoard.loadBoard("Collision");
+        games.add(new Game(3,board));
+        System.out.println("GameService game"+games.get(2).getId());
+
+
+        board= LoadBoard.loadBoard("PushPanel");
+        games.add(new Game(4,board));
+        System.out.println("GameService game"+games.get(3).getId());
+
+
+
     }
 
 

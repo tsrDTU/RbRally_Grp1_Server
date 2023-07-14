@@ -22,11 +22,7 @@
           "observers": []
         },
         {
-          "command": "OPTION_LEFT_RIGHT",
-          "observers": []
-        },
-        {
-          "command": "OPTION_FWD_FAST_FORWARD",
+          "command": "FORWARD",
           "observers": []
         },
         {
@@ -38,7 +34,11 @@
           "observers": []
         },
         {
-          "command": "OPTION_FWD_FAST_FORWARD",
+          "command": "RIGHT",
+          "observers": []
+        },
+        {
+          "command": "OPTION_LEFT_RIGHT",
           "observers": []
         },
         {
@@ -46,12 +46,12 @@
           "observers": []
         },
         {
-          "command": "FAST_FORWARD",
+          "command": "RIGHT",
           "observers": []
         }
       ],
-      "heading": "SOUTH",
-      "x": 0,
+      "heading": "NORTH",
+      "x": 5,
       "y": 0
     },
     {
@@ -68,31 +68,31 @@
       ],
       "cards": [
         {
+          "command": "FORWARD",
+          "observers": []
+        },
+        {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
+          "command": "FORWARD",
+          "observers": []
+        },
+        {
+          "command": "FAST_FORWARD",
+          "observers": []
+        },
+        {
+          "command": "OPTION_LEFT_RIGHT",
+          "observers": []
+        },
+        {
+          "command": "FAST_FORWARD",
+          "observers": []
+        },
+        {
           "command": "OPTION_FWD_FAST_FORWARD",
-          "observers": []
-        },
-        {
-          "command": "FORWARD",
-          "observers": []
-        },
-        {
-          "command": "FAST_FORWARD",
-          "observers": []
-        },
-        {
-          "command": "FAST_FORWARD",
-          "observers": []
-        },
-        {
-          "command": "FORWARD",
-          "observers": []
-        },
-        {
-          "command": "FORWARD",
-          "observers": []
-        },
-        {
-          "command": "FAST_FORWARD",
           "observers": []
         },
         {
@@ -106,7 +106,7 @@
     }
   ],
   "val": {
-    "map": "GoldenStripe",
+    "map": "Testing",
     "amountOfPlayers": 2,
     "MovePlayer": false,
     "selectedPLayer": 0,
